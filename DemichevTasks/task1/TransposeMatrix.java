@@ -22,14 +22,12 @@ public class TransposeMatrix {
                 matrix[i][j] = vvod.nextInt();
             }
         }
-        // Транспонируем матрицу
         int[][] transpose = new int[stroki][stolbi];
         for (int i=0; i < stroki; i++) {
             for (int j = 0; j < stolbi; j++) {
                 transpose[i][j] = matrix[j][i];
             }
         }
-        // Выводим готовую матрицу
         System.out.println("Ваша транспонированная матрица: ");
         for (int i = 0; i < stroki; i++) {
             for (int j = 0; j < stolbi; j++) {
